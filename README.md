@@ -100,12 +100,14 @@ Database `forum_db` terdiri dari 3 tabel dengan relasi sebagai berikut:
     * `email`
     * `password`
     * `reputation_points`
+    * `created_at` (timestamp)
 
 2.  **`questions`**
     * `question_id` (Primary Key)
     * `author_id` (Foreign Key ke `users.user_id`)
     * `title`
     * `body`
+    * `created_at` (timestamp)
 
 3.  **`answers`**
     * `answer_id` (Primary Key)
@@ -113,6 +115,7 @@ Database `forum_db` terdiri dari 3 tabel dengan relasi sebagai berikut:
     * `author_id` (Foreign Key ke `users.user_id`)
     * `body`
     * `is_accepted` (Boolean)
+    * `created_at` (timestamp)
 
 **Relasi:**
 * Satu `User` bisa memiliki banyak `Questions` (1-to-N).
