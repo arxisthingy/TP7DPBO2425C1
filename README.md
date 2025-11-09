@@ -4,9 +4,9 @@ Saya Dzaka Musyaffa Hidayat dengan NIM 2404913 mengerjakan Tugas Praktikum 7 dal
 
 ## Deskripsi 
 
-Aplikasi web Forum Tanya Jawab sederhana yang dibangun menggunakan PHP Native (tanpa *framework*). Proyek ini menerapkan konsep Object-Oriented Programming (OOP) secara penuh, pemisahan logika (*separation of concerns*), dan pola desain **Front Controller**.
+Aplikasi ini dibuat menggunakan PHP (Native) dan menggunakan struktur OOP (_Object-Oriented Programming_).
 
-Semua *request* pengguna ditangani oleh satu file `index.php` yang bertindak sebagai *router* untuk memuat *view* yang sesuai. Aplikasi ini mengelola tiga entitas utama: Pengguna (Users), Pertanyaan (Questions), dan Jawaban (Answers).
+Semua halaman diatur oleh satu file utama, ``index.php``. File ini bertugas sebagai "router" yang akan memuat tampilan halaman yang sesuai (seperti halaman User, Pertanyaan, atau Jawaban) berdasarkan link yang diklik pengguna.
 
 ---
 
