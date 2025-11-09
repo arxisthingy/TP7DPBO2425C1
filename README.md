@@ -118,3 +118,8 @@ Database `forum_db` terdiri dari 3 tabel dengan relasi sebagai berikut:
 * Satu `User` bisa memiliki banyak `Questions` (1-to-N).
 * Satu `User` bisa memiliki banyak `Answers` (1-to-N).
 * Satu `Question` bisa memiliki banyak `Answers` (1-to-N).
+
+## Dokumentasi
+
+https://github.com/user-attachments/assets/919ba585-42e8-4707-bb6e-93f7a1606c41
+
