@@ -9,6 +9,10 @@ Aplikasi ini dibuat menggunakan PHP (Native) dan menggunakan struktur OOP (_Obje
 Semua halaman diatur oleh satu file utama, ``index.php``. File ini bertugas sebagai "router" yang akan memuat tampilan halaman yang sesuai (seperti halaman User, Pertanyaan, atau Jawaban) berdasarkan link yang diklik pengguna.
 
 ---
+## Desain Database
+
+<img width="806" height="400" alt="erd" src="https://github.com/user-attachments/assets/ef0019e1-2529-439b-8c0a-ac35aff091ac" />
+
 
 ## Fitur
 
@@ -26,7 +30,7 @@ Aplikasi ini mengimplementasikan fungsionalitas CRUD (Create, Read, Update, Dele
     * **Update:** Mengubah judul dan isi pertanyaan.
     * **Delete:** Menghapus pertanyaan (dan semua jawaban yang terkait akan ikut terhapus secara otomatis berkat `ON DELETE CASCADE` di database).
 
-* **Manajemen Jawaban (CRUDA)**
+* **Manajemen Jawaban (CRUD)**
     * **Create:** Memposting jawaban baru untuk pertanyaan tertentu.
     * **Read:** Menampilkan semua jawaban di bawah pertanyaan terkait.
     * **Update:** Mengedit teks dari jawaban yang sudah ada.
@@ -49,7 +53,7 @@ Aplikasi ini menggunakan `index.php` sebagai satu-satunya titik masuk (Front Con
     * Menangani input `$_GET['action']` untuk logika Edit, Delete, atau Accept.
     * Memanggil *method* dari *class* Model global (cth: `$users = $user->getAllUsers();` atau `$answer->acceptAnswer(...)`).
     * Menampilkan data dan formulir ke pengguna.
-7.  Jika file *view* melakukan operasi C/U/D, file tersebut akan mengarahkan (redirect) pengguna kembali ke `index.php` dengan parameter yang sesuai (cth: `header("Location: index.php?page=users&pesan=...");`).
+7.  Jika file *view* melakukan operasi CRUD, file tersebut akan mengarahkan (redirect) pengguna kembali ke `index.php` dengan parameter yang sesuai (cth: `header("Location: index.php?page=users&pesan=...");`).
 8.  Setelah eksekusi file *view* selesai, `index.php` memuat `view/footer.php` (yang berisi penutup HTML).
 
 ---
